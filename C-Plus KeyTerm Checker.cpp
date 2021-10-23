@@ -9,6 +9,7 @@ The user will be able to quit the program at anytime by entering 'q' */
 //Begin header w/ necessary preprocessor directives, maybe more?:
 #include <iostream>
 #include <string>
+#include <cstdlib> //include for random function rand()
 #include <map>
 
 //Use the std namespace:
@@ -37,7 +38,7 @@ int main(){
             //A while loop will randomly select from "keyTermQuestions" and display a question, one at a time until user enters "q" to quit:
             while (input != "q")
                 //assign a randomly selected keyTermQuestions to "question"
-                question = random(keyTermQuestions);
+                question = rand(keyTermQuestions);
                 // display random question from keyTermQuestions w/ prompt for input:
                 cout << question << endl;
                 cout << "Enter response or 'q' to quit: "; 

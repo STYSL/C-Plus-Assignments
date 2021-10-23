@@ -21,6 +21,7 @@
     "iostream": "cpp",
     "iomanip": "cpp",
     "ostream": "cpp",
-    "__locale": "cpp"
+    "__locale": "cpp",
+    "string": "cpp"
   }
 }

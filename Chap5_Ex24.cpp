@@ -13,7 +13,7 @@ int main(){
     loop "condition", and "update" statement:*/
     for (num = 1; num <= 1000; num++){
         //condition to sum numbers divisible by 3 or 5 during for loop:
-        if (num%3 == 0 || num%5 == 0)
+        if ((num%3 == 0) || (num%5 == 0))
             sum = sum + num;
     }
     //Dispaly result with output statement:
