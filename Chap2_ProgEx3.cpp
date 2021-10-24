@@ -1,4 +1,7 @@
-/* 3. Consider the following program segment:  
+//Malik, D. S.. C++ Programming: From Problem Analysis to Program Design, 8th edition. 
+
+/* Chapter 2, Programming Exercise 3:
+Consider the following program segment:  
 //include statement(s)  
 //using namespace statement  
 int main() 
@@ -16,6 +19,7 @@ f. Write C11 statement(s) that output the values of num1, num2, num3, and averag
 g. Compile and run your program.  
 */
 
+//AUTHOR: F.RUSTIQUE JR.
 #include <iostream>
 using namespace std;
 

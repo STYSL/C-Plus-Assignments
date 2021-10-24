@@ -1,4 +1,6 @@
-/* Chapter 2, Programming Exercise #20:
+//Malik, D. S.. C++ Programming: From Problem Analysis to Program Design, 8th edition. 
+
+/* Chapter 2, Programming Exercise 20:
 For each used car a salesperson sells, the commission is paid as follows:  
 $20 plus 30% of the selling price in excess of the cost of the car. 
 Typically, the minimum selling price of the car is the cost of the car plus $200 
@@ -7,6 +9,7 @@ Write a program  that prompts the user to enter the salesperson’s fixed commis
 to the purchasing cost to determine the minimum and maximum selling price, and outputs minimum and maximum selling price of the car and the salesperson’s commission range.
 */
 
+//AUTHOR: F.RUSTIQUE JR.
 #include <iostream>
 using namespace std;
 

@@ -1,6 +1,9 @@
-/*Chapter Four Programming Exercise 1:
+//Malik, D. S.. C++ Programming: From Problem Analysis to Program Design, 8th edition. 
+
+/*Chapter Four, Programming Exercise 1:
 Write a program that prompts the user to input a number. The program should then output the number and a message saying whether the number is positive, negative, or zero.*/ 
-  
+
+//AUTHOR: F.RUSTIQUE JR.  
 #include <iostream>
 #include <string>
 #include <iomanip>

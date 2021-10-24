@@ -1,12 +1,16 @@
-/* 1. Write a program that produces the following output:  
+//Malik, D. S.. C++ Programming: From Problem Analysis to Program Design, 8th edition. 
+
+/* Chapter 2, Programming Exercise 1:
+Write a program that produces the following output:  
 **********************************   
 * Programming Assignment 1 *  
 * Computer Programming I *  
 * Author:??? *  
 * Due Date: Thursday, Jan. 24 *  
 **********************************  
-In your program, substitute??? with your own name. If necessary, adjust the  positions and the number of the stars to produce a rectangle.*/
+In your program, substitute ??? with your own name. If necessary, adjust the  positions and the number of the stars to produce a rectangle.*/
 
+//AUTHOR: F.RUSTIQUE JR.
 #include <iostream>
 #include <string>
 

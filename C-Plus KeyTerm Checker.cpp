@@ -1,4 +1,5 @@
 //Program: C-Plus Key Term Checker
+//Author: F.RUSTIQUE JR
 /* This program will prompt a user to enter the correct,
 matching key word term taken from the course book with its given definition.
 The definition will be displayed, one at a time, to the user as a question. 
@@ -10,7 +11,7 @@ The user will be able to quit the program at anytime by entering 'q' */
 #include <iostream>
 #include <string>
 #include <cstdlib> //include for random function rand()
-#include <map>
+#include <map> //use to store questions and matching answers?
 
 //Use the std namespace:
 using namespace std;

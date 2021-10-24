@@ -1,5 +1,9 @@
-/*Chapter Five Exercise 24:
-Write a for statement to add all the numbers divisible by 3 or 5 between 1 and 1000.*/ 
+//Malik, D. S.. C++ Programming: From Problem Analysis to Program Design, 8th edition. 
+
+/*Chapter Five, Exercise 24:
+Write a for statement to add all the numbers divisible by 3 or 5 between 1 and 1000.*/
+
+//AUTHOR: F.RUSTIQUE JR.
 #include <iostream>
 
 using namespace std;  

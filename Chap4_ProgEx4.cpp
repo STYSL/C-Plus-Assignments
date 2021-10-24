@@ -1,5 +1,9 @@
-/*Chapter Four Programming Exercise 4:
+//Malik, D. S.. C++ Programming: From Problem Analysis to Program Design, 8th edition. 
+
+/*Chapter Four, Programming Exercise 4:
 The statements in the following program are in incorrect order. Rearrange the statements so that they prompt the user to input the shape type (rectangle, circle, or cylinder) and the appropriate dimension of the shape. The program then outputs the following information about the shape: For a rectangle, it outputs the area and perimeter; for a circle, it outputs the area and circumference; and for a cylinder, it outputs the volume and surface area. After rearranging the statements, your program should be properly indented.*/ 
+
+//AUTHOR: F.RUSTIQUE JR.
 
 //CORRECTED AND WORKING ORDER:  
 #include <iostream>

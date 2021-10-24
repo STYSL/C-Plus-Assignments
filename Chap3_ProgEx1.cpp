@@ -1,4 +1,7 @@
-/* Consider the following incomplete C++ program:  
+//Malik, D. S.. C++ Programming: From Problem Analysis to Program Design, 8th edition. 
+
+/* Chapter 3, Programming Exercise 1:
+Consider the following incomplete C++ program:  
 #include <iostream>  
 int main()
 {  
@@ -28,6 +31,8 @@ The first line contains a person’s first name, last name, and the  department 
 
 e. Write statements that close the input and output files.  
 f. Write a C++ program that tests the statements in parts a through e.*/
+
+//AUTHOR: F.RUSTIQUE JR.
 
 // Make "preprocessor directives" and include the header file fstream in the program to work with file i/o:
 #include <iostream>
