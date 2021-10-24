@@ -192,7 +192,7 @@ int main (){
             }//END SWITCH
         }//END FOR LOOP
         cout << endl;
-    }//END SENTINLE-CONTROLLED WHILE LOOP
+    }//END SENTINEL-CONTROLLED WHILE LOOP
 
     //OUTPUT GOOD-BYE IF USER INPUTS '0':
     cout << "\nGood-Bye" << endl;
