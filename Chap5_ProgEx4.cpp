@@ -117,8 +117,8 @@ int main (){
         
         //DISPLAY HYPHEN AFTER 3RD DIGIT
         cout << "-";         
-        /*CONVERT AND OUTPUT REMAINING 4 LETTERS TO NUMBERS
-        USING A SWITCH IN A FOR LOOP:*/
+        /*CONVERT AND OUTPUT REMAINING 4 LETTERS FROM INPUT 
+        TO NUMBERS USING A SWITCH IN A FOR LOOP:*/
         for (int i = 3; i < 7; i++){
             switch(input[i]){
             case 'A':
