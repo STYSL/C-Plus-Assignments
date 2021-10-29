@@ -9,14 +9,14 @@ Write a value-returning function, isVowel, that returns the value  true if a giv
 
 using namespace std;
 
-bool isVowel(char vowel);
+bool isVowel(char vowel); //FUNCTION PROTOTYPE
 
 int main(){
     char vowel;
     cout << "Enter a letter: ";
     cin >> vowel;
     cout << isVowel(vowel) << endl;
-    
+
     return 0;
 }
 
