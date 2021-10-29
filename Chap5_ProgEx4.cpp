@@ -22,7 +22,6 @@ int main (){
 
     //DECLARE INPUT AS STRING DATA TYPE:
     string input;
-
     while (input != SENTINEL){ //sentinel-controlled loop
         //PROMPT TO ENTER TELEPHONE # AS LETTERS :
         cout << "\nEnter 7 letters to create an equivalent 1-800 phone number." 
