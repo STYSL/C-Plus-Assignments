@@ -44,7 +44,8 @@
     "system_error": "cpp",
     "tuple": "cpp",
     "type_traits": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "fstream": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }

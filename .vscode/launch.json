@@ -6,21 +6,13 @@
       "type": "cppdbg",
       "request": "launch",
       "args": [],
-      "stopAtEntry": false,
+      "stopAtEntry": true,
       "cwd": "/Users/npasemc/My Drive/GitHub/C-Plus Assignments",
       "environment": [],
       "program": "/Users/npasemc/My Drive/GitHub/C-Plus Assignments/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "lldb",
-      "miDebuggerPath": "/usr/bin/lldb",
-      "externalConsole": false,
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
+      "externalConsole": true
     }
   ]
 }
