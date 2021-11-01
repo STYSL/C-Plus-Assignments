@@ -1,36 +1,62 @@
 //Malik, D. S.. C++ Programming: From Problem Analysis to Program Design, 8th edition. 
 
-/*Chapter Seven Programming Exercise 3:
+/*Chapter Seven Programming Exercise 4:
 Write a program that prompts the user to input a string. The program then uses the function substr to remove all the vowels from the string.  For example, if str = "There", then after removing all the vowels, str = "Thr". After removing all the vowels, output the string. Your program must contain a function to remove all the vowels and a function to determine whether a character is a vowel.*/
 
 //AUTHOR: F.RUSTIQUE, JR.
 
 #include <iostream> 
 #include <string>
+#include <fstream> //Use fstream to output a file
 
 using namespace std;
 
-bool isVowel(char ch);
-string rotate(string pStr);
-string pigLatinString(string pStr);
+//DECLARE remVowel FUNCTION PROTOTYPE:
+string remVowel(string pString);
+//DECLARE isVowel FUNCTION PROTOTYPE:
+bool isVowel(char vowel);
 
 int main()
 {
-    string str;
+    //DECLARE OUTPUT FILE OBJECT:
+	ofstream outputFile;
+    //DECLARE STRING VARIABLES TO USE:
+    string inString, word, noVowelWord, finalOutput;
+    size_t i; //use for while loop
 
-    cout << "Enter a string: ";
-    cin >> str;
+    //PROMPT USER TO ENTER STRING:
+    cout << "Enter a word or sentence: ";
+    getline(cin, inString); //use getline to accept more than one word
     cout << endl;
 
-    cout << "The pig Latin form of " << str << " is: "
-         << pigLatinString(str) << endl;
+    cout << "'" << inString << "'"<< " with the vowels removed is: ";
+    cout << endl;
+
+    //SEPARATE INPUTTED STRING INTO WORDS. PASS TO remVowel FUNCTION:
+    while (i != -1){
+        i = inString.find_first_of(" ");
+        word = inString.substr(0, i);
+        noVowelWord = remVowel(word) + " ";
+        //cout << noVowelWord + " ";
+        inString = inString.substr(i + 1);
+        finalOutput = finalOutput + noVowelWord;
+    }
+
+    cout << finalOutput << endl;
+
+    //OPEN OUTPUT FILE:
+	outputFile.open("NoVowels.txt");
+	//WRITE finalOutput TO OUTPUT FILE:
+	outputFile << finalOutput << endl;
+	//CLOSE OUTPUT FILE
+	outputFile.close();
 
     return 0;
 }
- 
-bool isVowel(char ch)
-{
-    switch (ch)
+
+//DEFINE isVowel FUNCTION: 
+bool isVowel(char vowel){
+    switch (vowel)
     {
     case 'A': 
     case 'E': 
@@ -50,50 +76,18 @@ bool isVowel(char ch)
     }
 }
 
-string rotate(string pStr)
-{
-    string::size_type len = pStr.length();
-
-    string rStr;
-
-    rStr = pStr.substr(1, len - 1) + pStr[0];
-
-    return rStr;
-}
-
-string pigLatinString(string pStr)
-{
+//DEFINE remVowel FUNCTION. USE substr function:
+string remVowel(string pString){
     string::size_type len;
-
-    bool foundVowel;
-	
-    string::size_type counter;
-
-    if (isVowel(pStr[0]))                       //Step 1
-        pStr = pStr + "-way";	
-    else                                        //Step 2
-    {
-        pStr = pStr + '-';
-        pStr = rotate(pStr);                    //Step 3
-
-        len = pStr.length();                    //Step 3.a
-        foundVowel = false;                     //Step 3.b
-
-        for (counter = 1; counter < len - 1; 
-                          counter++)            //Step 3.d
-            if (isVowel(pStr[0]))
-            {
-                foundVowel = true;
-                break;
-            }
-            else                                //Step 3.c
-                pStr = rotate(pStr);
-
-        if (!foundVowel)                        //Step 4
-            pStr = pStr.substr(1, len) + "-way";
-        else
-            pStr = pStr + "ay";
+    string output = "";
+    len = pString.length();
+    for (int i = 0; i < len; i++){
+        if (isVowel(pString[i])){
+            //could not figure out how to use substr function
+            //used replace function instead:
+            pString = pString.replace(i, 1, "");
+            i -= 1;
+        }
     }
-
-    return pStr;                                //Step 5
+    return pString;                   
 }

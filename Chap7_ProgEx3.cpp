@@ -25,11 +25,10 @@ int main(){
     size_t i; //use for while loop
 
     cout << "Enter a word or sentence: ";
-    //cin >> str;
     getline(cin, str);//use getline to accept more than one word
     cout << endl;
 
-    cout << "The pig Latin form of ' " << str << "' is: ";
+    cout << "The pig Latin form of '" << str << "' is: ";
     cout << endl;
 
     //SEPARATE INPUTTED STRING INTO WORDS:
