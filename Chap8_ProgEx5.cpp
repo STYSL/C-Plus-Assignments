@@ -17,9 +17,6 @@ using namespace std;
 
 //BEGIN MAIN FUNCTION:
 int main(){
-    //DECLARE STRING INPUT VARIABLE:
-    string strInput;
-
     //DECLARE CHARACTER ARRAY THAT WILL STORE STRING INPUT:
     char charArray[100] = "";
     
