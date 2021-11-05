@@ -9,7 +9,6 @@ and outputs the string in uppercase letters.
 //AUTHOR: F.RUSTIQUE, JR.
 
 #include <iostream> 
-#include <string>
 //INCLUDE CSTRING LIBRARY FOR C-STRING MANIPULATION:
 #include <cstring>
 

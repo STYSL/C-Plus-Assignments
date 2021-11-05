@@ -9,7 +9,6 @@ variable. Output the array so that 10 elements per line are printed. */
 //AUTHOR: F.RUSTIQUE, JR.
 
 #include <iostream> 
-#include <string>
 
 using namespace std;
 
