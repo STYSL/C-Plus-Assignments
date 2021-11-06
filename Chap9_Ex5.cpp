@@ -6,6 +6,8 @@ Consider the declaration of the struct houseType given in this chapter. Suppose 
 ANSWER:
 
 if ((firstHouse.style == secondHouse.style) && (firstHouse.price == secondHouse.price))
-    return true;
+    //return true;
+    cout << "True";
 else
-    return false;
+    //return false;
+    cout << "False";
