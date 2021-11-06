@@ -6,7 +6,10 @@ computerType. Write a program that declares a variable of type
 computerType, prompts the user to input data about a computer, and 
 outputs computer's data.
 
-Exercise 2. Define a struct computerType to store the following data about a computer: Manufacturer (string), model type (string), processor  type (string), ram (int) in GB, hard drive size (int) in GB, year  when the computer was built (int), and the price (double). */
+Exercise 2. Define a struct computerType to store the following data about a computer: 
+Manufacturer (string), model type (string), processor type (string), 
+ram (int) in GB, hard drive size (int) in GB, 
+year when the computer was built (int), and the price (double). */
 
 //AUTHOR: F.RUSTIQUE, JR.
 
